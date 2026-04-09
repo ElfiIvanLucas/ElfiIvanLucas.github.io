@@ -18,6 +18,7 @@ body {
     background: var(--background-color);
     font-family: 'poppins', sans-serif;
     color: aliceblue;
+    padding-top: 6.0rem;
 }
 
 /* Navbar Styles */
@@ -65,7 +66,7 @@ body {
     padding-bottom: 0.5rem;
     border-bottom: 0.1rem solid var(--primary-color);
     transform: scaleX(0);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s linear;
 
 }
 
@@ -92,13 +93,32 @@ body {
     min-height: 100vh;
     background-image: url('../image_copy.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
+    background-size: 50% 100%;
+    background-position:top right;
     display: flex;
     align-items: center;
+
    
 }
 
+
+.hero .content {
+    max-width: 50rem;
+    padding: 1.4rem 7%;
+    margin-left: 1rem;
+}
+
+.hero .content h1 {
+    font-size:5em;
+    color:aliceblue;
+    text-shadow:1px 1px 3px #b66310;
+    line-height: 1.2;
+    
+}
+
+.hero .content h1 span {
+    color: var(--primary-color);
+}
 
 /* Media Queries */
 
