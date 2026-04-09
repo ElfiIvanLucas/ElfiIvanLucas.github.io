@@ -1,7 +1,6 @@
 :root {
     --primary-color: #b6895b;
     --background-color: #1a1818;
-    
 }
 
 * {
@@ -91,14 +90,30 @@ body {
 /* Hero Section */
  .hero{
     min-height: 100vh;
-    background-image: url('../image_copy.jpg');
-    background-repeat: no-repeat;
-    background-size: 50% 100%;
-    background-position:top right;
+    background-color: var(--background-color);
+    position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
+}
 
-   
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 65%;
+    background-image: url('../image_copy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 22%);
+    mask-image: linear-gradient(to right, transparent 0%, black 22%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    z-index: 0;
+    pointer-events: none;
 }
 
 
