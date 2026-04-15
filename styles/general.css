@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
 :root {
     --primary-color: #b6895b;
     --background-color: #1a1818;
@@ -88,6 +93,40 @@ body {
     display: none;
 }
 
+<<<<<<<< HEAD:styles/general.css
+========
+/* Hero Section */
+ .hero{
+    min-height: 100vh;
+    background-color: var(--background-color);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    scroll-margin-top: 6rem;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url('../image_copy.jpg');
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+    background-position: right center;
+    -webkit-mask-image: linear-gradient(to right, transparent 40%, rgba(0, 0, 0, 0.85) 54%, black 60%);
+    mask-image: linear-gradient(to right, transparent 40%, rgba(0, 0, 0, 0.85) 54%, black 60%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+>>>>>>>> d18ddb8cd0226ae06f550c600aaf896a40b826ae:styles/style.css
 
 
    

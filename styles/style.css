@@ -1,0 +1,196 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+:root {
+    --primary-color: #b6895b;
+    --background-color: #1a1818;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    background: var(--background-color);
+    font-family: 'poppins', sans-serif;
+    color: aliceblue;
+    padding-top: 6.0rem;
+    /* min-height: 2000px; */
+}
+
+/* Navbar Styles */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: aliceblue;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span {
+    color: var(--primary-color);
+}
+
+.navbar .navbar-nav a {
+    color: aliceblue;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary-color);
+    
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(1);
+
+}
+
+.navbar .navbar-extra a {
+    color: aliceblue;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--primary-color);
+}
+
+#menu {
+    display: none;
+}
+
+<<<<<<<< HEAD:styles/general.css
+========
+/* Hero Section */
+ .hero{
+    min-height: 100vh;
+    background-color: var(--background-color);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    scroll-margin-top: 6rem;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url('../image_copy.jpg');
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+    background-position: right center;
+    -webkit-mask-image: linear-gradient(to right, transparent 40%, rgba(0, 0, 0, 0.85) 54%, black 60%);
+    mask-image: linear-gradient(to right, transparent 40%, rgba(0, 0, 0, 0.85) 54%, black 60%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+>>>>>>>> d18ddb8cd0226ae06f550c600aaf896a40b826ae:styles/style.css
+
+
+   
+/* Media Queries */
+
+
+/* Laptop */
+@media (max-width: 1366px) {
+
+    html {
+        font-size: 75%;
+    }
+    
+}
+
+/* Tablet */
+@media (max-width: 810px) {
+
+    html {
+        font-size: 62.5%;
+    }
+
+    #menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgba(1, 1, 1, 0.8);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+     .navbar .navbar-nav a {
+        color: aliceblue;
+        display: block;
+        font-size: 2rem;
+        padding: 0.5rem;
+        margin: 1.5rem;
+    }
+
+    .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.2);
+
+     
+    }
+
+}
+/* Mobile */
+@media (max-width: 450px) {
+
+    html {
+        font-size: 55%;
+    }
+}
