@@ -130,29 +130,29 @@ body {
 /* footer */
 
 footer {
-    background-color:var(--primary-color);
-    text-align: left;
-    padding:1.4rem;
-   
+	background-color: var(--primary-color);
+	padding: 1.4rem;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 footer .payment {
-    text-align:right;
-    float: right;
+	text-align: right;
 }
 
 footer .payment a img {
-    width: 3rem
-
+	width: 3rem;
 }
 
 footer .credit {
-    padding: 1rem 0;
-    text-align: center;
+	padding: 1rem 0;
+	text-align: center;
 }
-   
+
 footer div {
-    display: inline-block;
+	display: inline-flex;
 }
 
 /* Media Queries */

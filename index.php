@@ -21,7 +21,7 @@
 
 <body>
     <!-- Navbar -->
-    <?php include 'nav.html'; ?>
+    <?php include 'includes/nav.html'; ?>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -33,7 +33,7 @@
     </section>
 
     <!-- Footer -->
-    <?php include 'footer.html'; ?>
+    <?php include 'includes/footer.html'; ?>
 
     <!-- Feather Icons -->
     <script>
