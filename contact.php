@@ -24,7 +24,7 @@
     <?php include 'includes/nav.html'; ?>
 
     <!-- Hero Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact hero">
         <main class="contact">
             <h1><span>Contact</span> Ons</h1>
             <p>Heeft u vragen of opmerkingen? Neem gerust contact met ons op!</p>

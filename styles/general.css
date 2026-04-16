@@ -23,11 +23,9 @@ body {
     font-family: 'poppins', sans-serif;
     color: aliceblue;
     padding-top: 6.0rem;
-    /* min-height: 2000px; */
 }
 
 /* Navbar Styles */
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -93,42 +91,15 @@ body {
     display: none;
 }
 
-
-
-/* Hero Section */
- .hero{
-    min-height: 100vh;
-    background-color: var(--background-color);
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    scroll-margin-top: 6rem;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    background-image: url('../image_copy.jpg');
-    background-repeat: no-repeat;
-    background-size: 60% 100%;
-    background-position: right center;
-    -webkit-mask-image: linear-gradient(to right, transparent 40%, rgba(0, 0, 0, 0.85) 54%, black 60%);
-    mask-image: linear-gradient(to right, transparent 40%, rgba(0, 0, 0, 0.85) 54%, black 60%);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-    z-index: 0;
-    pointer-events: none;
+.hero {
+	min-height: 100vh;
+	background-color: var(--background-color);
+	position: relative;
+	overflow: hidden;
+	align-items: center;
 }
 
 /* footer */
-
 footer {
 	background-color: var(--primary-color);
 	padding: 1.4rem;
@@ -138,6 +109,7 @@ footer {
 	align-items: center;
     position: relative;
     bottom: 0;
+    width: 100vw
 }
 
 footer .payment {
