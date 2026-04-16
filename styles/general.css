@@ -93,8 +93,8 @@ body {
     display: none;
 }
 
-<<<<<<<< HEAD:styles/general.css
-========
+
+
 /* Hero Section */
  .hero{
     min-height: 100vh;
@@ -126,10 +126,35 @@ body {
     z-index: 0;
     pointer-events: none;
 }
->>>>>>>> d18ddb8cd0226ae06f550c600aaf896a40b826ae:styles/style.css
 
+/* footer */
 
+footer {
+    background-color:var(--primary-color);
+    text-align: left;
+    padding:1.4rem;
    
+}
+
+footer .payment {
+    text-align:right;
+    float: right;
+}
+
+footer .payment a img {
+    width: 3rem
+
+}
+
+footer .credit {
+    padding: 1rem 0;
+    text-align: center;
+}
+   
+footer div {
+    display: inline-block;
+}
+
 /* Media Queries */
 
 
