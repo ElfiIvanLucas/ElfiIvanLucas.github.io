@@ -16,7 +16,7 @@
 
     <!-- My Styles -->
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 
 <body>
@@ -25,10 +25,12 @@
 
     <!-- Hero Section -->
     <section id="contact" class="contact">
-        <main class="content">
+        <main class="contact">
             <h1><span>Contact</span> Ons</h1>
             <p>Heeft u vragen of opmerkingen? Neem gerust contact met ons op!</p>
         </main>
+
+
     </section>
 
     <!-- Footer -->
