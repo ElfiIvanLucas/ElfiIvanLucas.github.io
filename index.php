@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jansdijk Implant Solutions</title>
 
-
     <!-- Fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
@@ -16,36 +14,14 @@
     <!-- feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
-
     <!-- My Styles -->
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/home.css">
 </head>
 
 <body>
-
-    <!-- Navbar start -->
-    <nav class="navbar">
-
-        <a href="index.html" class="navbar-logo">Jansdijk<span>Implant</span>.</a>
-
-
-        <div class="navbar-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">Over Ons</a>
-            <a href="#">Onze Producten</a>
-            <a href="contact.html">Contact</a>
-
-        </div>
-
-        <div class="navbar-extra">
-            <a href="#" id="search"><i data-feather="search"></i></a>
-            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
-            <a href="#" id="menu"><i data-feather="menu"></i></a>
-        </div>
-
-    </nav>
-    <!-- Navbar end -->
+    <!-- Navbar -->
+    <?php include 'nav.html'; ?>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -53,34 +29,19 @@
             <h1>Welkom bij <span>Jansdijk Implant Solutions</span></h1>
             <p>Uw partner in hoogwaardige tandheelkundige implantaten en oplossingen.</p>
             <a href="#" class="cta">Bekijk Onze Producten</a>
-
         </main>
     </section>
-    <!-- Hero Section End -->
 
-    <!-- footer -->
-    <footer>
-        <div class="credit">
-            <p>&copy; 2026 | Jansdijk Implant Solutions. Alle rechten voorbehouden.</p>
+    <!-- Footer -->
+    <?php include 'footer.html'; ?>
 
-        </div>
-        <div class="payment">
-            <a href="#"> <img class="ideal" src="payment icons/ideal.svg"></a>
-
-        </div>
-
-    </footer>
-
-    <!-- footer End -->
     <!-- Feather Icons -->
     <script>
         feather.replace()
     </script>
 
-
     <!-- My JavaScript -->
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
