@@ -32,6 +32,31 @@
         </main>
     </section>
 
+    <!-- Productcategorie Section -->
+
+<section id="productcategorie" class="productcategorie">
+    <h2><span>Onze</span> Productcategorieën</h2>
+    <p>Ontdek onze uitgebreide selectie van tandheelkundige implantaten en gerelateerde producten,
+        ontworpen om aan al uw behoeften te voldoen.</p>
+
+        <div class="row">
+            <div class="categorie-card">
+                <img src="styles/implantaten.jpg" alt="Implantaten">
+                <h3 class="categorie-title">- Implantaten -</h3>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="categorie-card">
+                <img src="styles/noxi.jpg" alt="Noxi">
+                <h3 class="categorie-title">- Noxi -</h3>
+            </div>
+            
+        </div>
+</section>
+
+    <!-- Productcategorie end -->
+
     <!-- Footer -->
     <?php include 'includes/footer.html'; ?>
 
