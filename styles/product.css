@@ -1,0 +1,28 @@
+/* product Section */
+
+
+.hero .product {
+	max-width: 60rem;
+	padding: 1.4rem 7%;
+	margin-left: 1rem;
+	position: relative;
+	z-index: 1;
+}
+
+.hero .product h1 {
+	font-size: 1.5em;
+	color: aliceblue;
+	text-shadow: 1px 1px 3px #b66310;
+	line-height: 1.2;
+}
+
+.hero .product .cta {
+	display: inline-block;
+	margin-top: 1rem;
+	padding: 1rem 3rem;
+	background-color: var(--primary-color);
+	color: aliceblue;
+	font-size: 1.4rem;
+	border-radius: 0.5rem;
+	box-shadow: 1px 1px 3px #b66310;
+}

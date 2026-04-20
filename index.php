@@ -28,7 +28,7 @@
         <main class="content">
             <h1>Welkom bij <span>Jansdijk Implant Solutions</span></h1>
             <p>Uw partner in hoogwaardige tandheelkundige implantaten en oplossingen.</p>
-            <a href="#" class="cta">Bekijk Onze Producten</a>
+            <a href="onzeproducten.php" class="cta">Bekijk Onze Producten</a>
         </main>
     </section>
 
@@ -41,14 +41,18 @@
 
         <div class="row">
             <div class="categorie-card">
-                <img src="styles/implantaten.jpg" alt="Implantaten">
+                 <a href="#" class="cta">
+                    <img src="styles/implantaten.jpg" alt="Implantaten"/>
+                </a>
                 <h3 class="categorie-title">- Implantaten -</h3>
             </div>
             
         </div>
         <div class="row">
             <div class="categorie-card">
-                <img src="styles/noxi.jpg" alt="Noxi">
+                <a href="#" class="cta">
+                    <img src="styles/noxi.jpg" alt="Noxi"/>
+                </a>
                 <h3 class="categorie-title">- Noxi -</h3>
             </div>
             
