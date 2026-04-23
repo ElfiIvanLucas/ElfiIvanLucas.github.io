@@ -34,29 +34,75 @@
 
     <!-- Productcategorie Section -->
 
-<section id="productcategorie" class="productcategorie">
+<section id="products" class="products">
     <h2><span>Onze</span> Productcategorieën</h2>
     <p>Ontdek onze uitgebreide selectie van tandheelkundige implantaten en gerelateerde producten,
         ontworpen om aan al uw behoeften te voldoen.</p>
 
         <div class="row">
-            <div class="categorie-card">
-                 <a href="#" class="cta">
-                    <img src="styles/implantaten.jpg" alt="Implantaten"/>
-                </a>
-                <h3 class="categorie-title">- Implantaten -</h3>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#"><i data-feather="eye"></i></a>
+                </div>
+                
+                <div class="product-image">
+                    <img src="images/implant.png" alt="Implantaten"/>
+                </div>
+
+                <div class="product-content">
+                    <h3>- Implantaten -</h3>
+                </div>
             </div>
             
-        </div>
-        <div class="row">
-            <div class="categorie-card">
-                <a href="#" class="cta">
-                    <img src="styles/noxi.jpg" alt="Noxi"/>
-                </a>
-                <h3 class="categorie-title">- Noxi -</h3>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#"><i data-feather="eye"></i></a>
+                </div>
+                
+                <div class="product-image">
+                    <img src="images/noxi.jpg" alt="Noxi"/>
+                </div>
+    
+                <div class="product-content">
+                    <h3>- Noxi -</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#"><i data-feather="eye"></i></a>
+                </div>
+                
+                <div class="product-image">
+                    <img src="images/implant.png" alt="Implantaten"/>
+                </div>
+
+                <div class="product-content">
+                    <h3>- Implantaten -</h3>
+                </div>
             </div>
             
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#"><i data-feather="eye"></i></a>
+                </div>
+                
+                <div class="product-image">
+                    <img src="images/noxi.jpg" alt="Noxi"/>
+                </div>
+    
+                <div class="product-content">
+                    <h3>- Noxi -</h3>
+                </div>
+            </div>
         </div>
+
+        
+       
 </section>
 
     <!-- Productcategorie end -->

@@ -6,7 +6,7 @@
 	right: 0;
 	bottom: 0;
 	width: 100%;
-	background-image: url("../image_copy.jpg");
+	background-image: url("../images/image_copy.jpg");
 	background-repeat: no-repeat;
 	background-size: 60% 100%;
 	background-position: right center;
@@ -68,55 +68,36 @@
 
 
 /* Product Categories */
-
-.productcategorie h2 span {
-	color: var(--primary-color);
+.products h2 span{
+    color: var(--primary-color);
+    
 }
-
-.productcategorie h2 {
-	font-size: 2em;
+    
+.products h2 {
+	font-size: 1.5em;
 	color: aliceblue;
 	line-height: 1.2;
 	text-align: center;
+    margin-top: 4rem;
 }
-
-.productcategorie {
-	padding: 5rem 7% 1.4rem;
-    min-height: 20vh;
-	position: relative;
-    z-index: 1;
-    border-top: 1px solid var(--primary-color);
-}
-
-.productcategorie p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
+.products p {
+    font-size: 1rem;
+    margin: auto;
     line-height: 1.4;
     font-weight: 100;
     text-align: center;
     max-width: 30rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.productcategorie .row {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.products .row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 1.5rem;
+	margin-top: 4rem;
 }
 
-.productcategorie .row .categorie-card {
-    text-align: center;
-    padding-bottom: 2rem;
-}
-
-.productcategorie .row .categorie-card img {
-    width: 80%;
-    border-radius: 0.5rem;
-	
-}
-.productcategorie .row .categorie-card .categorie-title {
-    margin-top: 1rem auto 0.5rem;
-
+.products .product-card {
+	text-align: center;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 2rem;
 }
