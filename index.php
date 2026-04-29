@@ -70,35 +70,6 @@
                 </div>
             </div>
 
-            <div class="product-card">
-                <div class="product-icons">
-                    <a href="#"><i data-feather="shopping-cart"></i></a>
-                    <a href="#"><i data-feather="eye"></i></a>
-                </div>
-                
-                <div class="product-image">
-                    <img src="images/implant.png" alt="Implantaten"/>
-                </div>
-
-                <div class="product-content">
-                    <h3>- Implantaten -</h3>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-icons">
-                    <a href="#"><i data-feather="shopping-cart"></i></a>
-                    <a href="#"><i data-feather="eye"></i></a>
-                </div>
-                
-                <div class="product-image">
-                    <img src="images/noxi.jpg" alt="Noxi"/>
-                </div>
-    
-                <div class="product-content">
-                    <h3>- Noxi -</h3>
-                </div>
-            </div>
         </div>
 
         

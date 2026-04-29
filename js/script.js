@@ -30,6 +30,12 @@ document.querySelector("#search-button").addEventListener("click", (e) => {
     searchBox.focus();
 });
 
+// Toggle class active untuk shopping cart
+
+const shoppingCart = document.querySelector(".shopping-cart");
+const shoppingCartButton = document.querySelector("#shopping-cart-button");
+    shoppingCart.classList.toggle("active");
+    event.preventDefault();
 // klik di luar elemen
 
 
