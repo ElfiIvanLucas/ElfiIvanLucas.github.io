@@ -34,8 +34,12 @@ document.querySelector("#search-button").addEventListener("click", (e) => {
 
 const shoppingCart = document.querySelector(".shopping-cart");
 const shoppingCartButton = document.querySelector("#shopping-cart-button");
+
+shoppingCartButton.onclick = (event) => {
     shoppingCart.classList.toggle("active");
     event.preventDefault();
+}
+
 // klik di luar elemen
 
 
@@ -47,4 +51,18 @@ document.addEventListener("click", function (e) {
     if (!searchForm.contains(e.target) && !document.querySelector("#search-button").contains(e.target)) {
         searchForm.classList.remove("active");
     }
+
+    if (!shoppingCart.contains(e.target) && !shoppingCartButton.contains(e.target)) {
+        shoppingCart.classList.remove("active");
+    }
 });
+
+// modal box
+const itemDetailModal = document.querySelector("#item-detail-modal");
+const itemDetailButton = document.querySelector(".item-detail-button");
+
+itemDetailButton.onclick = (event) => {
+    itemDetailModal.style.display = "flex";
+    event.preventDefault();
+}
+

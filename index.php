@@ -43,7 +43,7 @@
             <div class="product-card">
                 <div class="product-icons">
                     <a href="#"><i data-feather="shopping-cart"></i></a>
-                    <a href="#"><i data-feather="eye"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
                 </div>
                 
                 <div class="product-image">
@@ -58,7 +58,7 @@
             <div class="product-card">
                 <div class="product-icons">
                     <a href="#"><i data-feather="shopping-cart"></i></a>
-                    <a href="#"><i data-feather="eye"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
                 </div>
                 
                 <div class="product-image">
@@ -81,6 +81,30 @@
     <!-- Footer -->
     <?php include 'includes/footer.html'; ?>
 
+
+
+
+    <!-- modal box item detail start -->
+<div class="modal"  id="item-detail-modal">
+    <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+            <img src="images/implant.png" alt="Implantaten"/>
+            <div class="product-content">
+                <h3>- Implantaten -</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                
+            <div class="product-price">€ 100,00 <span>€ 150,00</span></div>
+            <a href="#"><i data-feather="shopping-cart"></i><span>Add to Cart</span></a>
+            </div>    
+           
+            
+        </div>
+    </div>
+</div>
+        
+
+    <!-- modal box item detail end -->
     <!-- Feather Icons -->
     <script>
         feather.replace()
