@@ -249,18 +249,20 @@ footer div {
     min-height: fit-content;
     max-height: fit-content;
     position: relative;
+    animation: animateModal 0.5s;
 }
 
 /* modal animation */
 
 @keyframes animateModal {
     from {
+        top: -300px;
         opacity: 0;
-        transform: translateY(-50px);
+    
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        top: 0;
     }
 }
 
