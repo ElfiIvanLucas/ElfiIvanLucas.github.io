@@ -17,6 +17,14 @@
     <!-- My Styles -->
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/home.css">
+
+    <!-- Alpine.js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+    <!-- App -->
+    <script src="js/app.js"></script>;
+    </script>
 </head>
 
 <body>
@@ -34,7 +42,7 @@
 
     <!-- Productcategorie Section -->
 
-<section id="products" class="products">
+<section id="products" class="products" x-data="products">
     <h2><span>Onze</span> Productcategorieën</h2>
     <p>Ontdek onze uitgebreide selectie van tandheelkundige implantaten en gerelateerde producten,
         ontworpen om aan al uw behoeften te voldoen.</p>
