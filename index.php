@@ -19,8 +19,7 @@
     <link rel="stylesheet" href="styles/home.css">
 
     <!-- Alpine.js -->
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <!-- App -->
     <script src="js/app.js"></script>;
