@@ -82,3 +82,10 @@ window.onclick = (event) => {
     }
 }
 
+// kode flexbox untuk produk
+const el = document.querySelector('.flex.justify-between.pt-6.pb-6');
+await setElementStyles(el, {
+  'justify-content': 'center',
+  'align-items': 'center'
+});
+const data = { success: true };

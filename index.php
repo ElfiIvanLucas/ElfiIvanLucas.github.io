@@ -22,8 +22,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <!-- App -->
-    <script src="js/app.js"></script>;
-    </script>
+    <script src="js/app.js"></script>    </script>
 </head>
 
 <body>
@@ -54,7 +53,9 @@
                 </div>
                 
                 <div class="product-image">
-                    <img src="images/implant.png" alt="Implantaten"/>
+                    <a href="#">
+                        <img src="images/implant.png" alt="Implantaten"/>
+                    </a>
                 </div>
 
                 <div class="product-content">
@@ -69,7 +70,9 @@
                 </div>
                 
                 <div class="product-image">
-                    <img src="images/noxi.jpg" alt="Noxi"/>
+                    <a href="#">
+                        <img src="images/noxi.jpg" alt="Noxi"/>
+                    </a>
                 </div>
     
                 <div class="product-content">
