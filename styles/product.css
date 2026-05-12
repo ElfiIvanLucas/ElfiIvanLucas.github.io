@@ -1,15 +1,14 @@
 /* product Section */
 
-.ctg-navigation {
+.ctg-nav {
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	padding: 1.4rem;
-	background-color: rgba(1, 1, 1, 0.8);
+	padding: 1.4rem 7%;
 	border-bottom: 1px solid var(--primary-color);
 }
 
-.ctg-navigation .cta {
+.ctg-nav .cta {
 	font-size: 1.5rem;
 	font-weight: 500;
 	color: aliceblue;
@@ -18,7 +17,6 @@
 	padding: 1rem 3rem;
 	box-shadow: 1px 1px 3px #b66310;
 	position: relative;
-	left: 100;
 	display: inline-block;
 	background-color: var(--primary-color);
 
@@ -26,7 +24,7 @@
 
 
 .hero .product {
-	max-width: 60rem;
+	/* max-width: 60rem; */
 	padding: 1.4rem 7%;
 	margin-left: 1rem;
 	position: relative;
@@ -34,18 +32,21 @@
 }
 
 .hero .product h1 {
-	font-size: 1.5em;
+	font-size: 2.5em;
 	color: aliceblue;
 	text-shadow: 1px 1px 3px #b66310;
 	line-height: 1.2;
 }
 
-.product .row {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-	gap: 1.5rem;
-	margin-top: 4rem;
+.product .implant-categorie h2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2rem;
+	font-size:2rem;
+	color: aliceblue;
 }
+
 
 .product .product-card {
 	justify-content: center;
@@ -64,8 +65,8 @@
 	height: 8rem;
 }
 
-.product .product-content h2,h3,h4,h5 {
-	font-size: 1rem;
+.product .product-content h3,h4,h5,h6 {
+	font-size: 1.5rem;
 	color: aliceblue;
 	
 }
