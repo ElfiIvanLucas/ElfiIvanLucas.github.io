@@ -28,7 +28,10 @@
     <section id="navigation" class="ctg-nav">
         <main class="categorie nav">
             <div id="ctg-navigation-main-bar" class="ctg-navigation">
-                    <a href="#" class="cta">Categorieën</a>
+                    <button type="button" id="ctg-menu" class="cta ctg-menu" aria-label="Open categorieën" aria-haspopup="dialog" aria-controls="ctg-modal" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                        <span>Categorieën</span>
+                    </button>
             </div>
         </main>
     </section>
@@ -91,6 +94,49 @@
         </main>
     </section>
 <!-- Product Section End -->
+
+    <!-- Categories Modal -->
+    <div class="ctg-modal" id="ctg-modal" aria-hidden="true">
+        <div class="ctg-modal-panel" role="dialog" aria-modal="true" aria-label="Categorieën">
+            <button type="button" class="close-icon" id="ctg-modal-close" aria-label="Sluit categorieën">
+                <i data-feather="x"></i>
+            </button>
+            <aside class="ctg-modal-sidebar">
+                <a href="#" class="is-active">Implantaten</a>
+                <a href="#">Noxi</a>
+                <a href="#">Youse</a>
+                <a href="#">Digitale oplossingen</a>
+                <a href="#">Assortiment</a>
+                <a href="#">Service</a>
+            </aside>
+            <div class="ctg-modal-content">
+                <h2>Implantaten</h2>
+                <div class="ctg-modal-grid">
+                    <div class="ctg-modal-column">
+                        <h3>Prama Power</h3>
+                        <a href="#">Short Neck h 1.80mm</a>
+                        <a href="#">Regular Neck h 2.80mm</a>
+                        <a href="#">Long Neck h 3.80mm</a>
+                        
+                    </div>
+                    <div class="ctg-modal-column">
+                        <h3>Prama Slim Power ⌀ 3.30mm</h3>
+                        <a href="#">Short Neck h 1.80mm</a>
+                        <a href="#">Regular Neck h 2.80mm</a>
+                        
+                    </div>
+                    <div class="ctg-modal-column">
+                        <h3>Prama RF-RF SL Power</h3>
+                        <a href="#">Optie 9</a>
+                        <a href="#">Optie 10</a>
+                        <a href="#">Optie 11</a>
+                        <a href="#">Optie 12</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <?php include 'includes/footer.html'; ?>
 

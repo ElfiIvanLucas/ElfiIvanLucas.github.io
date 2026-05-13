@@ -2,11 +2,22 @@
 
 const navbar = document.querySelector(".navbar");
 const menu = document.querySelector("#menu");
+const ctgMenu = document.querySelector("#ctg-menu");
+const ctgModal = document.querySelector("#ctg-modal");
+const ctgModalClose = document.querySelector("#ctg-modal-close");
 
 // ketika menu di klik
 
 menu.onclick = () => {
     navbar.classList.toggle("active");
+}
+
+if (ctgMenu && ctgModal) {
+    ctgMenu.addEventListener("click", () => {
+        ctgModal.classList.add("active");
+        ctgModal.setAttribute("aria-hidden", "false");
+        ctgMenu.setAttribute("aria-expanded", "true");
+    });
 }
 
 const menuButton = document.getElementById("menu");
@@ -44,7 +55,9 @@ shoppingCartButton.onclick = (event) => {
 
 
 document.addEventListener("click", function (e) {
-    if (!menu.contains(e.target) && !navMenu.contains(e.target)) {
+    const clickedCtgMenu = ctgMenu && ctgMenu.contains(e.target);
+
+    if (!menu.contains(e.target) && !clickedCtgMenu && !navMenu.contains(e.target)) {
         navMenu.classList.remove("active");
     }
 
@@ -57,27 +70,52 @@ document.addEventListener("click", function (e) {
     }
 });
 
+if (ctgModal && ctgModalClose) {
+    ctgModalClose.addEventListener("click", () => {
+        ctgModal.classList.remove("active");
+        ctgModal.setAttribute("aria-hidden", "true");
+        if (ctgMenu) {
+            ctgMenu.setAttribute("aria-expanded", "false");
+        }
+    });
+
+    ctgModal.addEventListener("click", (event) => {
+        if (event.target === ctgModal) {
+            ctgModal.classList.remove("active");
+            ctgModal.setAttribute("aria-hidden", "true");
+            if (ctgMenu) {
+                ctgMenu.setAttribute("aria-expanded", "false");
+            }
+        }
+    });
+}
+
 // modal box
 const itemDetailModal = document.querySelector("#item-detail-modal");
 const itemDetailButton = document.querySelectorAll(".item-detail-button");
 
-itemDetailButton.forEach((button) => {
-    button.onclick = (event) => {
-        itemDetailModal.style.display = "flex";
-        event.preventDefault();
-    };
-});
+if (itemDetailModal) {
+    itemDetailButton.forEach((button) => {
+        button.onclick = (event) => {
+            itemDetailModal.style.display = "flex";
+            event.preventDefault();
+        };
+    });
 
-// klik tombol close modal
-document.querySelector(".modal .close-icon").onclick = (event) => {
-    itemDetailModal.style.display = "none";
-    event.preventDefault();
-}
+    // klik tombol close modal
+    const itemDetailCloseButton = document.querySelector(".modal .close-icon");
 
-// klik di luar modal
+    if (itemDetailCloseButton) {
+        itemDetailCloseButton.onclick = (event) => {
+            itemDetailModal.style.display = "none";
+            event.preventDefault();
+        };
+    }
 
-window.onclick = (event) => {
-    if (event.target === itemDetailModal) {
-        itemDetailModal.style.display = "none";
+    // klik di luar modal
+    window.onclick = (event) => {
+        if (event.target === itemDetailModal) {
+            itemDetailModal.style.display = "none";
+        }
     }
 }
