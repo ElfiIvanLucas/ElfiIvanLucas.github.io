@@ -97,6 +97,18 @@
 	top: 1rem;
 	right: 1rem;
 	color: var(--background-color);
+	background: transparent;
+	border: none;
+	padding: 0.25rem;
+	cursor: pointer;
+	transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.ctg-modal .close-icon:hover,
+.ctg-modal .close-icon:focus-visible {
+	color: var(--primary-color);
+	transform: scale(1.08);
+	outline: none;
 }
 
 .ctg-modal-sidebar {
@@ -126,7 +138,7 @@
 .ctg-modal-content {
 	display: flex;
 	flex-direction: column;
-	gap: 1.5rem;
+	gap: 1rem;
 	padding: 1rem 1rem 1rem 0;
 }
 
@@ -138,24 +150,24 @@
 
 .ctg-modal-grid {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	gap: 2rem;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 1rem;
 }
 
 .ctg-modal-column {
 	display: flex;
 	flex-direction: column;
-	gap: 0.75rem;
+	gap: 0.50rem;
 }
 
 .ctg-modal-column h3 {
-	font-size: 1.6rem;
+	font-size: 1.25rem;
 	color: #2d3a34;
 	margin-bottom: 0.5rem;
 }
 
 .ctg-modal-column a {
-	font-size: 1.35rem;
+	font-size: 1rem;
 	color: #4c7f72;
 	padding: 0.25rem 0;
 }
@@ -196,31 +208,87 @@
 	color: aliceblue;
 }
 
+.product .product-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+	gap: 2rem;
+	margin-top: 1.5rem;
+	clear: both;
+}
 
 .product .product-card {
-	justify-content: center;
+	position: relative;
 	text-align: center;
 	padding: 2rem;
-	max-width: 30%;
-	float: left;
+	max-width: none;
+	float: none;
+	width: 100%;
+	border-radius: 1rem;
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+	cursor: pointer;
+}
+
+.product .product-card:hover,
+.product .product-card:focus-within {
+	transform: translateY(-0.45rem);
+	box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.16);
+	border-color: rgba(255, 255, 255, 0.18);
 }
 
 
 .product .product-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 1rem 0;
 }
 
 .product .product-image img {
-	height: 8rem;
+	width: 100%;
+	max-width: 18rem;
+	height: auto;
+	aspect-ratio: 3 / 2;
+	object-fit: contain;
+	transition: transform 0.25s ease;
 }
 
-.product .product-content h3,h4,h5,h6 {
-	font-size: 1.5rem;
+.product .product-card:hover .product-image img,
+.product .product-card:focus-within .product-image img {
+	transform: scale(1.04);
+}
+
+.product .product-content h3,
+.product .product-content h4,
+.product .product-content h5,
+.product .product-content h6 {
+	font-size: 1.25rem;
 	color: aliceblue;
 	
 }
 
 @media (max-width: 810px) {
+	.hero .product {
+		margin-left: 0;
+		padding: 1.4rem 5%;
+	}
+
+	.product .product-grid {
+		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+		gap: 1.25rem;
+	}
+
+	.product .product-card {
+		padding: 1.25rem;
+	}
+
+	.product .product-image img {
+		max-width: 100%;
+		aspect-ratio: 3 / 2;
+	}
+
 	.ctg-nav .ctg-menu {
 		padding: 1rem;
 	}
@@ -248,5 +316,26 @@
 
 	.ctg-modal-grid {
 		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+	.product .product-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.hero .product h1 {
+		font-size: 2em;
+	}
+
+	.product .implant-categorie h2 {
+		font-size: 1.6rem;
+	}
+
+	.product .product-content h3,
+	.product .product-content h4,
+	.product .product-content h5,
+	.product .product-content h6 {
+		font-size: 1.25rem;
 	}
 }

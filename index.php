@@ -33,17 +33,21 @@
     <section class="hero" id="home">
         <main class="content">
             <h1>Welkom bij <span>Jansdijk Implant Solutions</span></h1>
-            <p>Uw partner in hoogwaardige tandheelkundige implantaten en oplossingen.</p>
+            <p>Uw partner in hoogwaardige tandheelkundige implantaten en oplossingen.
+                We zijn distributeur van Sweden & Martina implantaat- en prothetische systemen in Nederland</p>
             <a href="onzeproducten.php" class="cta">Bekijk Onze Producten</a>
         </main>
     </section>
-
+    
+    
     <!-- Productcategorie Section -->
 
 <section id="products" class="products" x-data="products">
     <h2><span>Onze</span> Productcategorieën</h2>
     <p>Ontdek onze uitgebreide selectie van tandheelkundige implantaten en gerelateerde producten,
         ontworpen om aan al uw behoeften te voldoen.</p>
+
+
 
         <div class="row">
             <div class="product-card">
@@ -87,6 +91,16 @@
 </section>
 
     <!-- Productcategorie end -->
+
+
+     <!-- sweden&martina -->
+
+    <section class="sweden-martina">
+        <div class="sweden-martina-image">
+            <img src="images/sweden martina.jpg" alt="Sweden & Martina"/>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <?php include 'includes/footer.html'; ?>

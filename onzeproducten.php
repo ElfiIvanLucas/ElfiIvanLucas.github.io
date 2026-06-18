@@ -44,51 +44,53 @@
                 <h2>Categorieën</h2>
             </div>
 
-            
-            <div class="product-card">
+            <div class="product-grid" >
+
+                <a class="product-card" href="#" aria-label="Vraag informatie aan over Prama Slim Power">
+                
+                    <div class="product-image">
+                    <img src="images/prama slim.png" alt="Prama Slim Power"/>
+                    </div>
+
+                    <div class="product-content">
+                        <h3>- Prama Slim Power -</h3>
+                </div>
+                </a>
+
+
+            <a class="product-card" href="#" aria-label="Vraag informatie aan over Prama Power">
                 
                 <div class="product-image">
-                    <img src="images/prama slim power.jpg" alt="Prama Slim Power"/>
-                </div>
-
-                <div class="product-content">
-                    <h3>- Prama Slim Power -</h3>
-                </div>
-            </div>
-
-
-            <div class="product-card">
-                
-                <div class="product-image">
-                    <img src="images/prama power.jpg" alt="Prama Power"/>
+                    <img src="images/prama power.png" alt="Prama Power"/>
                 </div>
 
                 <div class="product-content">
                     <h4>- Prama Power -</h4>
                 </div>
-            </div>
+            </a>
 
-            <div class="product-card">
+            <a class="product-card" href="#" aria-label="Vraag informatie aan over Prama RF-RF SL Power">
                 
                 <div class="product-image">
-                    <img src="images/prama rf-rf sl power.jpg" alt="rf-rf sl power"/>
+                    <img src="images/RF-RF SL.png" alt="rf-rf sl power"/>
                 </div>
 
                 <div class="product-content">
                     <h5>- Prama RF-RF SL Power -</h5>
                 </div>
-
-            </div>
+            </a>
             
-            <div class="product-card">
+            <a class="product-card" href="contact.php" aria-label="Vraag informatie aan over Prama Power Nasal & Pterygoid Implants">
                 
                 <div class="product-image">
-                    <img src="images/prama power nasal &pterygoid implants.jpg" alt="Prama Power Nasal & Pterygoid Implants"/>
+                    <img src="images/prama nasal.png" alt="Prama Power Nasal & Pterygoid Implants"/>
                 </div>
 
                 <div class="product-content">
                     <h6>- Prama Power Nasal & Pterygoid Implants -</h6>
                 </div>
+            </a>
+
             </div>
 
         </main>
@@ -102,7 +104,7 @@
                 <i data-feather="x"></i>
             </button>
             <aside class="ctg-modal-sidebar">
-                <a href="#" class="is-active">Implantaten</a>
+                <a href="#">Implantaten</a>
                 <a href="#">Noxi</a>
                 <a href="#">Youse</a>
                 <a href="#">Digitale oplossingen</a>
@@ -113,24 +115,35 @@
                 <h2>Implantaten</h2>
                 <div class="ctg-modal-grid">
                     <div class="ctg-modal-column">
-                        <h3>Prama Power</h3>
+                        <h3>Prama Slim Power ⌀ 3.30mm </h3>
+                        <a href="#">Short Neck h 1.80mm</a>
+                        <a href="#">Regular Neck h 2.80mm</a>
+                        
+                        
+                    </div>
+
+                    <div class="ctg-modal-column">
+                        <h3>Prama Power </h3>
                         <a href="#">Short Neck h 1.80mm</a>
                         <a href="#">Regular Neck h 2.80mm</a>
                         <a href="#">Long Neck h 3.80mm</a>
                         
                     </div>
-                    <div class="ctg-modal-column">
-                        <h3>Prama Slim Power ⌀ 3.30mm</h3>
-                        <a href="#">Short Neck h 1.80mm</a>
-                        <a href="#">Regular Neck h 2.80mm</a>
-                        
-                    </div>
+                    
                     <div class="ctg-modal-column">
                         <h3>Prama RF-RF SL Power</h3>
                         <a href="#">Optie 9</a>
                         <a href="#">Optie 10</a>
                         <a href="#">Optie 11</a>
                         <a href="#">Optie 12</a>
+                    </div>
+
+                    <div class="ctg-modal-column">
+                        <h3>Prama Power Nasal & Pterygoid</h3>
+                        <a href="#">Optie 13</a>
+                        <a href="#">Optie 14</a>
+                        <a href="#">Optie 15</a>
+                        <a href="#">Optie 16</a>
                     </div>
                 </div>
             </div>

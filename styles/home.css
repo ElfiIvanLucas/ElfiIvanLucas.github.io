@@ -236,3 +236,17 @@
     padding: 1rem 1.6rem;
 }
 
+/* sweden&martina */
+.sweden-martina {
+	unicode-bidi: isolate;
+	display: block;
+	
+}
+
+
+
+.sweden-martina-image img {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	object-fit: contain;
+}
