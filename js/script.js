@@ -5,6 +5,18 @@ const menu = document.querySelector("#menu");
 const ctgMenu = document.querySelector("#ctg-menu");
 const ctgModal = document.querySelector("#ctg-modal");
 const ctgModalClose = document.querySelector("#ctg-modal-close");
+const ctgSidebarLinks = document.querySelectorAll(".ctg-modal-sidebar a[data-category]");
+const ctgModalPanes = document.querySelectorAll(".ctg-modal-pane[data-category]");
+
+function setActiveCategory(category) {
+    ctgSidebarLinks.forEach((link) => {
+        link.classList.toggle("is-active", link.dataset.category === category);
+    });
+
+    ctgModalPanes.forEach((pane) => {
+        pane.classList.toggle("is-active", pane.dataset.category === category);
+    });
+}
 
 // ketika menu di klik
 
@@ -17,8 +29,24 @@ if (ctgMenu && ctgModal) {
         ctgModal.classList.add("active");
         ctgModal.setAttribute("aria-hidden", "false");
         ctgMenu.setAttribute("aria-expanded", "true");
+        setActiveCategory("implantaten");
     });
 }
+
+ctgSidebarLinks.forEach((link) => {
+    link.addEventListener("mouseenter", () => {
+        setActiveCategory(link.dataset.category);
+    });
+
+    link.addEventListener("focus", () => {
+        setActiveCategory(link.dataset.category);
+    });
+
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+        setActiveCategory(link.dataset.category);
+    });
+});
 
 const menuButton = document.getElementById("menu");
 const navMenu = document.querySelector(".navbar-nav");
